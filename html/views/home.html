@@ -1,197 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IMPRESOS COMERCIALES C&G, SOCIEDAD ANÓNIMA</title>
-    <link rel="stylesheet" href="../../assets/css/styless.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #003a70;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      padding: 2rem;
-      text-align: center;
-    }
-    footer {
-      background-color: #003a70;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-    }
-    .logo {
-      width: 120px;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-    
-    /* 🎨 LÍNEA AGREGADA: Estilo para hacer el video responsivo */
-    .video-responsive {
-        width: 100%;
-        max-width: 860px; /* Ancho máximo igual al original */
-        height: 515px; /* Altura original por defecto */
-        aspect-ratio: 16 / 9; /* Mantiene la proporción 16:9 */
-    }
-    
-    /* 🎨 LÍNEA AGREGADA: Estilo para hacer las imágenes de redes responsivas */
-    .footer-icon {
-        width: 3%; /* Ancho original en escritorio */
-        height: auto;
-        margin: 0 5px;
-    }
-    
-    .cookies {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: rgba(0,0,0,0.85);
-      color: white;
-      padding: 15px;
-      text-align: center;
-      z-index: 1000;
-    }
-    /* 🎨 LÍNEA AGREGADA: Asegura que el texto y botones de cookies se separen bien en móvil */
-    .cookies p {
-        margin-bottom: 10px; 
-    }
-    .cookies button {
-      margin: 5px 10px; /* Ajuste para espacio vertical en móvil */
-      padding: 8px 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .aceptar { background-color: #020e80; color: white; }
-    .rechazar { background-color: #000000; color: white; }
-    .configurar { background-color: #c7c4f3; color: black; }
-    .contacto {
-      background: white;
-      border-radius: 10px;
-      padding: 15px;
-      margin-top: 20px;
-      display: inline-block;
-      text-align: left;
-      line-height: 1.6;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      /* 🎨 LÍNEA AGREGADA: Limita el ancho del contacto para que no se vea enorme en escritorio */
-      max-width: 500px;
-    }
-    
-    /* 🚨 BLOQUE CLAVE: MEDIA QUERY para pantallas pequeñas (máx. 768px) */
-    @media (max-width: 768px) {
-        /* Estilos de Encabezado y Navegación */
-        header h1 {
-            font-size: 1.5rem; 
-        }
-        nav {
-            display: flex;
-            flex-direction: column; /* Apila los enlaces en vertical */
-            align-items: center;
-        }
-        nav a {
-            margin: 0.5rem 0;
-        }
-        /* Video y Promoción */
-        .video-responsive {
-            height: 250px; /* Reduce la altura en móvil */
-        }
-        /* Iconos de Redes Sociales */
-        .footer-icon {
-            width: 10%; /* Aumenta el tamaño para que sean fáciles de tocar */
-        }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMPRESOS COMERCIALES C&G, SOCIEDAD ANÓNIMA</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tu hoja de estilos -->
+  <link rel="stylesheet" href="../../assets/css/styless.css">
 </head>
+
 <body>
+  <header class="text-center py-3">
+    <img src="../../assets/image/impresos.jpg" alt="Logo C&G" class="logo">
+    <h1>IMPRESOS COMERCIALES C&G, SOCIEDAD ANÓNIMA</h1>
+    <nav class="mt-2">
+      <a href="home.html">Home</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="productos.html">Productos</a>
+      <a href="promociones.html">Promociones</a>
+    </nav>
+  </header>
 
-  <header>
-    <img src="/assets/image/impresos.jpg" alt="Logo C&G" class="logo">
-    <h1>IMPRESOS COMERCIALES C&G, SOCIEDAD ANÓNIMA</h1>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="productos.html">Productos</a>
-      <a href="promociones.html">Promociones</a>
-    </nav>
-  </header>
+  <main class="container text-center my-4">
+    <h2>Bienvenidos a IMPRESOS COMERCIALES C&G</h2>
+    <p>Somos una empresa dedicada a ofrecer soluciones gráficas innovadoras y de alta calidad. Con años de experiencia en impresión comercial, brindamos servicios personalizados que se adaptan a las necesidades de nuestros clientes.</p>
 
-  <main>
-    <h2>Bienvenidos a IMPRESOS COMERCIALES C&G</h2>
-    <p>Somos una empresa dedicada a ofrecer soluciones gráficas innovadoras y de alta calidad. Con años de experiencia en impresión comercial, brindamos servicios personalizados que se adaptan a las necesidades de nuestros clientes.</p>
+    <div class="ratio ratio-16x9 my-4">
+      <iframe src="https://www.youtube.com/embed/3c7f8lpPj_s" title="Video institucional" allowfullscreen></iframe>
+    </div>
 
-        <iframe class="video-responsive" src="https://www.youtube.com/embed/3c7f8lpPj_s" title="Video institucional" frameborder="0" allowfullscreen></iframe>
+    <section class="mt-4">
+      <h3>Promoción destacada</h3>
+      <img src="../../assets/image/promo2.png" alt="Promoción" class="img-fluid rounded-3 shadow-sm my-3">
+      <p>¡Aprovecha nuestros descuentos especiales en material publicitario durante todo el mes de Octubre!</p>
+    </section>
 
-    <section class="mt-4">
-      <h3>Promoción destacada</h3>
-            <img src="/assets/image/promo2.png" alt="Promoción" style="max-width: 90%; height: auto;">
-      <p>¡Aprovecha nuestros descuentos especiales en material publicitario durante todo el mes de Octubre!</p>
-    </section>
+    <div class="contacto mt-4 mx-auto">
+      <h4>Contacto</h4>
+      <p><strong>Bruce Sánchez</strong><br>
+      Encargado de Ventas y Cotizaciones<br>
+      Tel: 4780-8430<br>
+      ventas502gt@outlook.com</p>
+      <p><strong>Tel. Oficina:</strong> +502 2212-5521<br>
+      <strong>Correo:</strong> industrialitograficacyg@gmail.com<br>
+      <strong>Dirección:</strong> 5ª Avenida A 11-54 Colonia Nueva Monserrat, Zona 3 Mixco, Guatemala<br>
+      <strong>NIT:</strong> 102926301</p>
+    </div>
+  </main>
 
-    <div class="contacto">
-      <h4>Contacto</h4>
-      <p><strong>Bruce Sánchez</strong><br>
-      Encargado de Ventas y Cotizaciones<br>
-      Tel: 4780-8430<br>
-      ventas502gt@outlook.com</p>
-      <p><strong>Tel. Oficina:</strong> +502 2212-5521<br>
-      <strong>Correo:</strong> industrialitograficacyg@gmail.com<br>
-      <strong>Dirección:</strong> 5ª Avenida A 11-54 Colonia Nueva Monserrat, Zona 3 Mixco, Guatemala<br>
-      <strong>NIT:</strong> 102926301</p>
-    </div>
-  </main>
+  <footer class="text-center py-3">
+    <p>Síguenos en redes sociales</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="https://facebook.com" target="_blank"><img src="../../assets/image/logo facebook.png" class="icon"></a>
+      <a href="https://instagram.com" target="_blank"><img src="../../assets/image/1658587303instagram-png.png" class="icon"></a>
+      <a href="https://tiktok.com" target="_blank"><img src="../../assets/image/Logo tik.png" class="icon"></a>
+      <a href="https://wa.me/50200000000" target="_blank"><img src="../../assets/image/Logo-WhatsApp.png" class="icon"></a>
+    </div>
+    <h5 class="mt-3">© 2025 IMPRESOS COMERCIALES C&G, SOCIEDAD ANÓNIMA. Todos los derechos reservados.</h5>
+  </footer>
 
-  <footer>
-    <p>Síguenos en redes sociales</p>
-        <a href="https://facebook.com" target="_blank"><img src="../../assets/image/logo facebook.png" class="footer-icon"></a>
-    <a href="https://instagram.com" target="_blank"><img src="../../assets/image/1658587303instagram-png.png" class="footer-icon"></a>
-    <a href="https://tiktok.com" target="_blank"><img src="../../assets/image/Logo tik.png" class="footer-icon"></a>
-    <a href="https://wa.me/50200000000" target="_blank"><img src="../../assets/image/Logo-WhatsApp.png" class="footer-icon"></a>
-    <h5 class="mt-3">© 2025 IMPRESOS COMERCIALES C&G, SOCIEDAD ANÓNIMA. Todos los derechos reservados.</h5>
-  </footer>
+  <div class="cookies" id="cookies">
+    <p>Usamos cookies para mejorar su experiencia. Revise nuestros <a href="#" style="color:#0dcaf0;">Términos y Condiciones</a>.</p>
+    <button class="aceptar" onclick="aceptarCookies()">Aceptar</button>
+    <button class="rechazar" onclick="rechazarCookies()">Rechazar</button>
+    <button class="configurar" onclick="configurarCookies()">Configurar</button>
+  </div>
 
-  <div class="cookies" id="cookies">
-    <p>Usamos cookies para mejorar su experiencia. Revise nuestros <a href="#" style="color:#0dcaf0;">Términos y Condiciones</a>.</p>
-    <button class="aceptar" onclick="aceptarCookies()">Aceptar</button>
-    <button class="rechazar" onclick="rechazarCookies()">Rechazar</button>
-    <button class="configurar" onclick="configurarCookies()">Configurar</button>
-  </div>
+  <script>
+    function aceptarCookies() {
+      document.getElementById('cookies').style.display = 'none';
+      alert('Gracias por aceptar los términos.');
+    }
 
-  <script>
-    function aceptarCookies() {
-      document.getElementById('cookies').style.display = 'none';
-      alert('Gracias por aceptar los términos.');
-    }
+    function rechazarCookies() {
+      document.body.innerHTML = '<h2 style="text-align:center;margin-top:20%;color:red;">Debe aceptar los términos para continuar.</h2>';
+    }
 
-    function rechazarCookies() {
-      document.body.innerHTML = '<h2 style="text-align:center;margin-top:20%;color:red;">Debe aceptar los términos para continuar.</h2>';
-    }
-
-    function configurarCookies() {
-      alert('Aquí puede configurar sus preferencias de cookies (función en desarrollo).');
-    }
-  </script>
-
+    function configurarCookies() {
+      alert('Aquí puede configurar sus preferencias de cookies (función en desarrollo).');
+    }
+  </script>
 </body>
-
 </html>
-
